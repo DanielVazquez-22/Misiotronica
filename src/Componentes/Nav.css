@@ -1,0 +1,30 @@
+.contenedorNav{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        background-color: rgb(14, 118, 179);
+        justify-content: space-around;
+        align-items: center;
+        color: azure;
+    }
+
+    .indiceNav{
+        margin: 10px;
+        text-decoration-line:none;
+        color: azure;
+    }
+
+.contenedorNav img{
+    width: 70px;
+    margin: 5px;
+}
+.logo{
+    display: flex;
+}
+
+@media (max-width: 480px) {
+    .contenedorNav{
+        display: block;
+    };
+    
+}

@@ -1,0 +1,59 @@
+.producto-card{
+    border: 2px solid rgb(19, 16, 16);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 25px;
+    width: 350px;
+}
+.titleVentas{
+    color: azure;
+    color: rgb(14, 118, 179);
+}
+
+:hover.producto-card{
+    background-color: rgb(49, 36, 33);
+    color: aliceblue;
+    
+}
+
+.producto-card img {
+    width: 250px ;
+    height: 300px;
+    object-fit: contain;
+}
+
+:hover.producto-card img{
+    width: 300px;
+    height: 350px;
+}
+
+.Listas{
+    display: flex;
+    margin: 50px auto;
+    flex-wrap: wrap
+}
+
+.formulario{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(159, 189, 223);
+}
+
+.formulario input,textarea,::placeholder{
+    background-color: rgb(14, 118, 179);
+    color: azure;
+    width: 500px;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border: none;
+}
+
+.fondoM img{
+    padding-top: 80px;
+    width: 100%;
+    height: 600px;
+}
+
