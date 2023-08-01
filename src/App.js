@@ -1,20 +1,20 @@
 import './App.css';
-import Nav from './Componentes/Nav';
-import Ventas from './Componentes/Ventas';
-import Contacto from './Componentes/Contacto'
-import SobreNosotros from './Componentes/SobreNosotros';
-
+import {Routes, Route} from 'react-router-dom'
+import Home from './Componentes/pages/Home';
+import Tienda from './Componentes/pages/Tienda';
+import Contacto from './Componentes/pages/Contacto'
+import SobreNosotros from './Componentes/pages/SobreNosotros';
+import { routes } from './Routes';
 function App() {
   return (
     <>
-    <header>
-    <Nav/>
-    </header>
-    <main className='contenedor'>
-      <Ventas/>
-      <Contacto/>
-      <SobreNosotros/>
-    </main>
+      <Routes>
+        <Route path={routes.home} element={<Home />}>
+          <Route path={routes.tienda} element={<Tienda/>}/>
+          <Route path={routes.contacto} element={<Contacto/>}/>
+          <Route path={routes.nosotros} element={<SobreNosotros/>}/>
+        </Route>
+      </Routes>
     </>
   );
 }

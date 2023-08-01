@@ -1,0 +1,26 @@
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid rgb(19, 16, 16);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    width: 350px;
+    justify-content: center;
+}
+
+:hover.container-card{
+    background-color: rgb(49, 36, 33);
+    color: aliceblue;
+    
+}
+.container-card img {
+    width: 250px ;
+    height: 300px;
+    object-fit: contain;
+    
+}
+:hover.container-card img{
+    width: 300px;
+    height: 350px;
+}
