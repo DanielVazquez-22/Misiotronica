@@ -10,6 +10,7 @@ function Card({producto}) {
         <img src={producto.avatar} alt={producto.avatar} />
         <h3>Precio {producto.precio}</h3>
         <p><i>Descripcion:</i> {producto.descripcion}</p>
+        <button>Comprar</button>
     </div>
     </>
 )
