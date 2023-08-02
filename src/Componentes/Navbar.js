@@ -5,7 +5,7 @@ import './Nav.css'
 
 const Navbar = () => {
   return (
-    <div className="container-navbar">
+    <header className="container-navbar">
       <div className='logo-container'>
       <img src={logoM} alt="logo-portada" />
       <h1>Misiotrónica</h1>
@@ -20,7 +20,7 @@ const Navbar = () => {
         <input type="text" placeholder="Buscar.." name="search" />
         <button type="submit"><i class="fa fa-search">x</i></button>
       </form>
-    </div>
+    </header>
   )
 }
 

@@ -10,13 +10,13 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path={routes.home} element={<Home />}>
+          <Route path={routes.home} element={<Home />}/>
           <Route path={routes.tienda} element={<Tienda/>}/>
           <Route path={routes.contacto} element={<Contacto/>}/>
           <Route path={routes.nosotros} element={<SobreNosotros/>}/>
           <Route path={routes.notfound} element={<NotFound/>}/>
           <Route path='*' element={<Navigate to='/not_found'/>}/>
-        </Route>
+        
       </Routes>
     </>
   );

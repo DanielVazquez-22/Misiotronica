@@ -1,8 +1,12 @@
 
 import React from 'react'
+import Footer from '../Footer'
+import Navbar from '../Navbar'
 
 function SobreNosotros() {
   return (
+    <>
+    <Navbar/>
     <div className='container-nosotros'>
       <h1>Un poco sobre nosotros</h1>
       <p>
@@ -15,7 +19,9 @@ function SobreNosotros() {
       En nuestra página web podrás encontrar más información sobre nosotros, nuestros productos y servicios, nuestras promociones y nuestros datos de contacto. Te invitamos a visitarnos y a comprobar por qué somos la mejor opción en venta de electrónica. ¡Te esperamos! 😊
       </p>
     
-</div>
+    </div>
+    <Footer/>
+    </>
   )
 }
 

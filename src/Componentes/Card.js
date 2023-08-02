@@ -1,6 +1,5 @@
 import React from 'react'
 import './Card.css'
-/* import producto from "../Productos" */
 
 function Card({producto}) {
   return (

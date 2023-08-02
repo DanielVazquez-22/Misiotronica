@@ -1,9 +1,13 @@
 import Producto from '../Card'
+import Footer from '../Footer'
+import Navbar from '../Navbar'
 import {producto} from "../Productos"
 import '../module-style-pages.css'
 
 function Tienda() {
     return (
+    <>
+    <Navbar/>
     <div className='container-tienda'>
     <h1 className='titleVentas'>Lista de Productos</h1>
     <section className='Listas'>
@@ -12,6 +16,8 @@ function Tienda() {
     })}
     </section>
     </div>
+    <Footer/>
+    </>
 )
 }
 
