@@ -10,7 +10,7 @@
         
     }
 
-.container-nav a{
+.container-nav-item a{
     margin: 10px;
     text-decoration-line:none;
     color: azure;
@@ -24,8 +24,9 @@
     display: flex;
 }
 
-.container-buscador placeholder{
-    background-color: aliceblue;}
+.nav-toogle{
+    display: none;
+}
 
 @media (max-width: 650px) {
     .container-navbar{
@@ -39,9 +40,50 @@
     @media (max-width: 480px) {
         .container-navbar{
             display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .container-nav-item{
+            top: 80px;
+            position: absolute;
+            background-color: rgb(14, 118, 179);
+            display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-            align-content: stretch;
-            justify-content: center;
+            align-items:end;
+            width: 100%;
+            transform: translateX(-100%);
+            transition: 0.3s ease all;
+        }
+        .container-nav-item.open{
+            transform: translateX(0) !important;
+        }
+
+        .nav-toogle{
+            display: flex !important;
+            flex-direction: column;
+            margin: 15px;
+        }
+        .nav-toogle span{
+            width: 30px;
+            height: 4px;
+            background: azure;
+            margin-bottom: 5px;
+            border-radius: 2px;
+            transform-origin: 5px 0px;
+            transition:all 0.2s linear;
+        }
+        .nav-toogle.open > span{
+            transform: rotate(45deg) translate(0px,0px);
+        }
+
+        .nav-toogle.open > span:nth-child(2){
+            display: none;
+        }
+
+        .nav-toogle.open > span:nth-child(3){
+            transform: rotate(-45deg) translate(-5px,1px);
+
+        }
+
         };
-}
