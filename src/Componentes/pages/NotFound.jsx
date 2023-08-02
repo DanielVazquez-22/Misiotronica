@@ -1,8 +1,9 @@
+import e404 from './404.jpg'
+
 const NotFound = () => {
   return (
     <div className='not_found'>
-        <h1>404</h1>
-        <h1>Not Found</h1>
+        <img src={e404} alt="404-error" />
     </div>
   )
 }

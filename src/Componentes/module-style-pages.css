@@ -61,10 +61,11 @@
 }
 
 .not_found{
-    position: absolute;
-    top: 40%; left: 50%; transform: translate(-50%);
-    color: rgb(14, 118, 179);
-    font: 2.5em sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.not_found img{
+    width: 50%;
 }
 
 .footer{
