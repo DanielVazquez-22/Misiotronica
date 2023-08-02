@@ -6,7 +6,7 @@ function Card({producto}) {
     <>
     <div className="container-card">
         <h2>{producto.productoName}</h2> 
-        <img src={producto.avatar} alt={producto.avatar} />
+        <img src={producto.img} alt={producto.img} />
         <h3>Precio {producto.precio}</h3>
         <p><i>Descripcion:</i> {producto.descripcion}</p>
         <button>Comprar</button>

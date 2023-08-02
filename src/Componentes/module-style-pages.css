@@ -90,3 +90,13 @@
     color: rgb(14, 118, 179);
     text-align: center;
 }
+
+.container-buscador{
+    display: flex;
+    justify-content: center;
+}
+.container-buscador ::placeholder{
+    background-color: azure;
+    color: black
+    ;
+}

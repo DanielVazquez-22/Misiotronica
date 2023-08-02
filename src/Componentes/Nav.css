@@ -24,19 +24,24 @@
     display: flex;
 }
 
-.container-buscador input{
-    padding: 10px;
-    background-color: aliceblue;
-    border-radius: 15px;
-    
-}
-
 .container-buscador placeholder{
     background-color: aliceblue;}
 
-@media (max-width: 480px) {
-    .contenedorNav{
-        display: block;
+@media (max-width: 650px) {
+    .container-navbar{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: center;
     };
-    
+}
+    @media (max-width: 480px) {
+        .container-navbar{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: stretch;
+            justify-content: center;
+        };
 }

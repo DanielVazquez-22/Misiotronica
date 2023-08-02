@@ -16,7 +16,6 @@ function App() {
           <Route path={routes.nosotros} element={<SobreNosotros/>}/>
           <Route path={routes.notfound} element={<NotFound/>}/>
           <Route path='*' element={<Navigate to='/not_found'/>}/>
-        
       </Routes>
     </>
   );

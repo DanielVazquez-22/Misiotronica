@@ -16,10 +16,6 @@ const Navbar = () => {
       <Link  to={routes.nosotros}>Sobre Nosotros</Link>
       <Link  to={routes.contacto}>Contacto </Link>
       </div>
-      <form className="container-buscador">
-        <input type="text" placeholder="Buscar.." name="search" />
-        <button type="submit"><i class="fa fa-search">x</i></button>
-      </form>
     </header>
   )
 }
