@@ -9,7 +9,7 @@ function Card({producto}) {
         <img src={producto.img} alt={producto.img} />
         <h3>Precio {producto.precio}</h3>
         <p><i>Descripcion:</i> {producto.descripcion}</p>
-        <button>Comprar</button>
+        <button className='btn-comprar'>Comprar</button>
     </div>
     </>
 )

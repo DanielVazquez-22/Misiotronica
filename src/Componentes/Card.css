@@ -9,18 +9,31 @@
     justify-content: center;
 }
 
-:hover.container-card{
-    background-color: rgb(49, 36, 33);
-    color: aliceblue;
-    
+.container-card p{
+    margin: 20px;
 }
+:hover.container-card{
+    background-color: rgb(35, 96, 138);
+    color: aliceblue;
+}
+:hover.container-card h2{
+    color: aliceblue;
+}
+
 .container-card img {
     width: 200px ;
     height: 200px;
-    object-fit: contain;
-    
+   
+    border-radius: 25%;
 }
-:hover.container-card img{
-    width: 300px;
-    height: 350px;
+
+.btn-comprar{
+    font-size: large;
+    align-self: end;
+}
+
+@media (max-width: 480px) {
+    .container-card{
+        width: 70%;
+    }
 }
