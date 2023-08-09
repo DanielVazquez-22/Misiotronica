@@ -17,7 +17,6 @@
 
 .formulario{
     margin-top: 80px;
-    width: 100%;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -100,3 +99,4 @@
     color: black
     ;
 }
+
