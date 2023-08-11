@@ -1,11 +1,10 @@
 .container-tienda{
     margin-top: 100px;
+    text-align: center;
 }
 .titleVentas{
     color: azure;
     color: rgb(14, 118, 179);
-    display: flex;
-    justify-content: center;
 }
 
 .Listas{

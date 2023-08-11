@@ -5,23 +5,21 @@ import {producto} from "../Productos"
 import '../module-style-pages.css'
 import Buscador from '../Buscador'
 
-
 function Tienda() {
-
-    return (
-    <>
+return (
+<>
     <Navbar/>
     <div className='container-tienda'>
-    <h1 className='titleVentas'>Lista de Productos</h1>
-    <Buscador/>
-    <section className='Listas'>
-    { producto.electronica.map((producto, index) => {
+        <h1 className='titleVentas'>Lista de Productos</h1>
+        <Buscador/>
+        <section className='Listas'>
+        {producto.electronica.map((producto, index) => {
         return <Producto producto={producto} key={index} />
-    })}
+        })}
     </section>
     </div>
     <Footer/>
-    </>
+</>
 )
 }
 
