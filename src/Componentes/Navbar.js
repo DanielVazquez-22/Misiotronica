@@ -10,7 +10,7 @@ const Navbar = () => {
     <header className="container-navbar">
       <div className='logo-container'>
       <img src={logoM} alt="logo-portada" />
-      <h1>Misiotrónica</h1>
+      <Link  to={routes.home}><h1>MISIOTRÓNICA</h1></Link>
       </div>
       <div className={`container-nav-item ${isOpen && "open"}`}>
       <Link  to={routes.home}>Inicio</Link>
